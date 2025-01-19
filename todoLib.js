@@ -3,10 +3,10 @@
 {
     "task": "Buy groceries",
     "completed": false,
-    "dueDate": "2024-08-30"
+    "dueDate": "2025-08-30"
 }
 */
-
+ 
 let todoArray = [];
 
 let nextId = 1;
@@ -72,10 +72,10 @@ function deleteOneById(id) {
 
 if (require.main === module) {
   // Add to-do item
-  let result = addOne("Buy groceries", false, "2024-08-30");
+  let result = addOne("Buy groceries", false, "2025-08-30");
   console.log(result);
   // Add another to-do item
-  result = addOne("Clean the house", true, "2024-08-31");
+  result = addOne("Clean the house", true, "2025-08-31");
   console.log(result);
 
   console.log("getAll called:", getAll());
@@ -84,7 +84,7 @@ if (require.main === module) {
 
   console.log(
     "updateOneById called:",
-    updateOneById(1, { completed: true, dueDate: "2024-09-01" })
+    updateOneById(1, { completed: true, dueDate: "2025-09-01" })
   );
   console.log("findById called after item updated:", findById(1));
 
